@@ -1,0 +1,53 @@
+<ion-view title="Registro">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <ion-list>
+            <label class="item item-input">
+                    <span class="input-label">Nombres</span>
+                    <input id="first_name" type="text" placeholder="" name="first_name">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Apellidos</span>
+                    <input id="last_name" type="text" placeholder="" name="last_name">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Correo electónico</span>
+                    <input id="email" type="email" placeholder="" name="email">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Contraseña</span>
+                    <input id="password" type="password" placeholder="" name="password">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Dirección</span>
+                    <input id="address" type="text" placeholder="" name="address">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Teléfono</span>
+                    <input id="phone" type="text" placeholder="" name="phone">
+                </label>
+                <label class="item item-input item-select">
+				    <div class="input-label">
+				      	Tipo de Usuario
+				    </div>
+				    <select id="user_type" name="user_type">
+					    <option value="1">Padre</option>
+					    <option value="2">Bus</option>
+					    <option value="3">Colegio</option>
+				    </select>
+				</label>
+                <label id="school" class="item item-input item-select">
+				    <div class="input-label">
+				      	Colegio
+				    </div>
+                    <select>
+                        <option ng-repeat="school in schools" title="{{school.name}}" value="{{school.id}}">{{school.name}}</option>
+                    </select>
+				</label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button ui-sref="login" ng-click="newUser()" class="button button-full button-balanced">Crear cuenta</button>
+            <a onclick="history.back()" id="login-button2" class="button button-stable  button-block">Volver</a>
+        </form>
+    </ion-content>
+</ion-view>
