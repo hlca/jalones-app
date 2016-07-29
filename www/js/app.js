@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.loginCtrl','starter.menuCtrl','starter.state1Ctrl','starter.state2Ctrl','starter.state3Ctrl','starter.state4Ctrl','starter.state5Ctrl'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -35,29 +35,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/common/login.html',
     controller: 'LoginCtrl',
   })
+  .state('menu', {
+    url: '/menu',
+    templateUrl: 'templates/menu.html',
+    controller: 'MenuCtrl',
+  })
   .state('state1', {
     url: '/state1',
-    templateUrl: 'templates/common/state1.html',
+    templateUrl: 'templates/state1.html',
     controller: 'State1Ctrl',
   })
   .state('state2', {
     url: '/state2',
-    templateUrl: 'templates/common/state2.html',
+    templateUrl: 'templates/state2.html',
     controller: 'State2Ctrl',
   })
   .state('state3', {
     url: '/state3',
-    templateUrl: 'templates/common/state3.html',
+    templateUrl: 'templates/state3.html',
     controller: 'State3Ctrl',
   })
   .state('state4', {
     url: '/state4',
-    templateUrl: 'templates/common/state4.html',
+    templateUrl: 'templates/state4.html',
     controller: 'State4Ctrl',
   })
   .state('state5', {
     url: '/state5',
-    templateUrl: 'templates/common/state5.html',
+    templateUrl: 'templates/state5.html',
     controller: 'State5Ctrl',
   });
 

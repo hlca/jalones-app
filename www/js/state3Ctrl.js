@@ -1,5 +1,3 @@
-angular.module('starter.controllers', [])
+angular.module('starter.state3Ctrl', [])
 
-.controller('State3Ctrl', function($scope) {})
-
-});
+.controller('State3Ctrl', function($scope) {});
