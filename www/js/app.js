@@ -5,7 +5,17 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.loginCtrl','starter.menuCtrl','starter.state1Ctrl','starter.state2Ctrl','starter.state3Ctrl','starter.state4Ctrl','starter.state5Ctrl'])
+angular.module('starter', ['ionic', 
+  'starter.factories',
+  'starter.controllers', 
+  'starter.services', 
+  'starter.loginCtrl', 
+  'starter.menuCtrl',
+  'starter.state1Ctrl',
+  'starter.state2Ctrl',
+  'starter.state3Ctrl',
+  'starter.state4Ctrl',
+  'starter.state5Ctrl'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
