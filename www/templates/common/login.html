@@ -1,6 +1,10 @@
 <ion-view title="Login" hide-back-button="true">
     <ion-content padding="true" class="has-header">
         <form class="list">
+            <ion-header-bar class="bar bar-header bar-light">
+              <h1 class="title">PullUs</h1>
+            </ion-header-bar>
+            <div class="spacer" style="height: 40px;"></div>
             <ion-list>
                 <label class="item item-input">
                     <span class="input-label">Correo Electrónico</span>
@@ -12,7 +16,8 @@
                 </label>
             </ion-list>
             <div class="spacer" style="height: 40px;"></div>
-            <button class="button button-stable  button-block" ng-click="loginFunction()">Iniciar Sesión</button>
+            <!-- button must have ng-click="loginFunction()"-->
+            <button class="button button-stable  button-block" type="submit" formaction="http://localhost:8100/?#/menu">Iniciar Sesión</button>
             <a ui-sref="register" id="login-button3" class="button button-positive  button-block button-clear">Regístrate</a>
         </form>
     </ion-content>

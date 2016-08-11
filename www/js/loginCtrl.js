@@ -1,5 +1,5 @@
 angular.module('starter.loginCtrl', [])
-
+/*
 .controller('LoginCtrl', function($location, $scope, APIService) {
   $scope.loginFunction = function(){
     var promise = APIService.asyncAuthenticate(
@@ -15,3 +15,4 @@ angular.module('starter.loginCtrl', [])
   }
 
 });
+*/

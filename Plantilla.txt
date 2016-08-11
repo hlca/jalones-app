@@ -1,0 +1,12 @@
+1. Login -> Iniciar Sesión, Regístrate
+
+2. Iniciar sesión -> Menú principal
+
+3. Regístrate: La info que apuntamos el martes.
+
+4. Menú principal -> Perfil, Publicar Jalon, Buscar Jalon, Configuración
+
+5. Perfil: Info basica que pedimos e informacion extra añadible
+   Perfil -> Editar información, Editar rutas, cerrar sesión
+
+6. 
