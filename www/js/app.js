@@ -50,6 +50,11 @@ angular.module('starter', ['ionic',
     templateUrl: 'templates/menu.html',
     controller: 'MenuCtrl',
   })
+  .state('forgotpass', {
+    url: '/forgotpass',
+    templateUrl: 'templates/common/forgotpass.html',
+    controller: 'forgotpassCtrl',
+  })
   .state('state1', {
     url: '/state1',
     templateUrl: 'templates/state1.html',
