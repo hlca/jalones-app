@@ -55,6 +55,11 @@ angular.module('starter', ['ionic',
     templateUrl: 'templates/common/forgotpass.html',
     controller: 'forgotpassCtrl',
   })
+  .state('map', {
+    url: '/map',
+    templateUrl: 'templates/map.html',
+    controller: 'MapCtrl',
+  })
   .state('state1', {
     url: '/state1',
     templateUrl: 'templates/state1.html',
