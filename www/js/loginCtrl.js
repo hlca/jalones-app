@@ -15,4 +15,12 @@ angular.module('starter.loginCtrl', [])
     // });
   }
 
+  $scope.registerFunction = function() {
+    $location.path('/register');
+  }
+
+  $scope.forgotPassFunction = function() {
+    $location.path('/forgotpass');
+  }
+
 });
