@@ -3,7 +3,7 @@ angular.module('starter.MapCtrl', [])
     .controller('MapCtrl', function($scope) {
       function initialize() {
         console.log( 'step 1');
-        var myLatlng = new google.maps.LatLng(43.07493,-89.381388);
+        var myLatlng = new google.maps.LatLng(14.6047215,-90.4916558);
         
         var mapOptions = {
           center: myLatlng,
