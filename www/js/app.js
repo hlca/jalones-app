@@ -12,6 +12,8 @@ angular.module('starter', ['ionic',
   'starter.loginCtrl', 
   'starter.menuCtrl',
   'starter.MapCtrl',
+  'starter.forgotpassCtrl',
+  'starter.registerCtrl',
   'starter.state1Ctrl',
   'starter.state2Ctrl',
   'starter.state3Ctrl',
@@ -45,6 +47,11 @@ angular.module('starter', ['ionic',
     url: '/login',
     templateUrl: 'templates/common/login.html',
     controller: 'LoginCtrl',
+  })
+  .state('register', {
+    url: '/register',
+    templateUrl: 'templates/common/register.html',
+    controller: 'RegisterCtrl',
   })
   .state('menu', {
     url: '/menu',

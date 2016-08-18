@@ -26,28 +26,8 @@
                     <span class="input-label">Teléfono</span>
                     <input id="phone" type="text" placeholder="" name="phone">
                 </label>
-                <label class="item item-input item-select">
-				    <div class="input-label">
-				      	Tipo de Usuario
-				    </div>
-				    <select id="user_type" name="user_type">
-					    <option value="1">Padre</option>
-					    <option value="2">Bus</option>
-					    <option value="3">Colegio</option>
-				    </select>
-				</label>
-                <label id="school" class="item item-input item-select">
-				    <div class="input-label">
-				      	Colegio
-				    </div>
-                    <select>
-                        <option ng-repeat="school in schools" title="{{school.name}}" value="{{school.id}}">{{school.name}}</option>
-                    </select>
-				</label>
+                
             </ion-list>
-            <div class="spacer" style="height: 40px;"></div>
-            <button ui-sref="login" ng-click="newUser()" class="button button-full button-balanced">Crear cuenta</button>
-            <a onclick="history.back()" id="login-button2" class="button button-stable  button-block">Volver</a>
         </form>
     </ion-content>
 </ion-view>
