@@ -1,6 +1,32 @@
-<ion-view title="State 2" hide-back-button="false">
-    <ion-content padding="false" scroll="false" class="has-header">
-    	Hello from state 2 <br>
-      {{mCtrl}}
+<ion-view title="Publicar jalon" hide-back-button="false">
+    <ion-content padding="true" class="has-header">
+    	<form class="list">
+            <ion-list>
+            <label class="item item-input">
+                    <span class="input-label">Punto de salida</span>
+                    <input name="go_point" type="text" placeholder="Dirección de salida">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Destino</span>
+                    <input name="end_point" type="text" placeholder="Dirección destino">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Hora de salida</span>
+                    <input name="exit_time" type="time">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Comentario</span>
+                    <input name="extra" type="text" placeholder="Preferencias">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Teléfono</span>
+                    <input name="phone" type="text" placeholder="Teléfono">
+                </label>
+            </ion-list>
+            <button style="top:30px; left:35%" class="button button-positive"
+            ng-click="publishFunction()">
+				Pull'em!
+			</button>
+        </form>
 	</ion-content>
 </ion-view>
