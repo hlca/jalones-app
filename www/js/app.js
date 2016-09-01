@@ -18,7 +18,7 @@ angular.module('starter', ['ionic',
   'starter.state2Ctrl',
   'starter.state3Ctrl',
   'starter.state4Ctrl',
-  'starter.state5Ctrl'
+  'starter.state5Ctrl',
   'starter.searchRouteCtrl'])
 
 .run(function($ionicPlatform) {
