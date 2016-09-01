@@ -20,7 +20,8 @@ angular.module('starter', ['ionic',
   'starter.state4Ctrl',
   'starter.state5Ctrl',
   'starter.modifyRouteCtrl',
-  'starter.searchRouteCtrl', ])
+  'starter.searchRouteCtrl',
+  'starter.createRouteCtrl' ])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -64,6 +65,11 @@ angular.module('starter', ['ionic',
     url: '/forgotpass',
     templateUrl: 'templates/common/forgotpass.html',
     controller: 'forgotpassCtrl',
+  })
+  .state('createroute', {
+    url: '/createroute',
+    templateUrl: 'templates/createRoute.html',
+    controller: 'CreateRouteCtrl',
   })
   .state('searchroute', {
     url: '/searchroute',
