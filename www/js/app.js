@@ -63,6 +63,11 @@ angular.module('starter', ['ionic',
     templateUrl: 'templates/common/forgotpass.html',
     controller: 'forgotpassCtrl',
   })
+  .state('searchroute', {
+    url: '/SearchRoute',
+    templateUrl: 'templates/SearchRoute.html',
+    controller: 'searchrouteCtrl',
+  })
   .state('map', {
     url: '/map',
     templateUrl: 'templates/map.html',
