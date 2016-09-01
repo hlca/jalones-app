@@ -65,7 +65,7 @@ angular.module('starter', ['ionic',
     controller: 'forgotpassCtrl',
   })
   .state('searchroute', {
-    url: '/SearchRoute',
+    url: '/searchroute',
     templateUrl: 'templates/SearchRoute.html',
     controller: 'SearchRouteCtrl',
   })
