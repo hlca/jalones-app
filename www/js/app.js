@@ -18,7 +18,8 @@ angular.module('starter', ['ionic',
   'starter.state2Ctrl',
   'starter.state3Ctrl',
   'starter.state4Ctrl',
-  'starter.state5Ctrl'])
+  'starter.state5Ctrl'
+  'starter.searchRouteCtrl'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -66,7 +67,7 @@ angular.module('starter', ['ionic',
   .state('searchroute', {
     url: '/SearchRoute',
     templateUrl: 'templates/SearchRoute.html',
-    controller: 'searchrouteCtrl',
+    controller: 'SearchRouteCtrl',
   })
   .state('map', {
     url: '/map',
