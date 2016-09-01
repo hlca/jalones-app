@@ -20,7 +20,7 @@ angular.module('starter', ['ionic',
   'starter.state4Ctrl',
   'starter.state5Ctrl',
   'starter.modifyRouteCtrl',
-  'starter.searchRouteCtrl'])
+  'starter.searchRouteCtrl', ])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
