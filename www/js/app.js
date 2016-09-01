@@ -5,11 +5,11 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 
+angular.module('starter', ['ionic',
   'starter.factories',
-  'starter.controllers', 
-  'starter.services', 
-  'starter.loginCtrl', 
+  'starter.controllers',
+  'starter.services',
+  'starter.loginCtrl',
   'starter.menuCtrl',
   'starter.MapCtrl',
   'starter.forgotpassCtrl',
@@ -19,6 +19,7 @@ angular.module('starter', ['ionic',
   'starter.state3Ctrl',
   'starter.state4Ctrl',
   'starter.state5Ctrl',
+  'starter.searchRouteCtrl',
   'starter.searchRouteCtrl'])
 
 .run(function($ionicPlatform) {
@@ -69,6 +70,11 @@ angular.module('starter', ['ionic',
     templateUrl: 'templates/SearchRoute.html',
     controller: 'SearchRouteCtrl',
   })
+    .state('modifyroute', {
+      url: '/modifyroute',
+      templateUrl: 'templates/ModifyRoute.html',
+      controller: 'ModifyRouteCtrl'
+    })
   .state('map', {
     url: '/map',
     templateUrl: 'templates/map.html',
