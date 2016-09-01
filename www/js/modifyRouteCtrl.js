@@ -1,6 +1,6 @@
 angular.module('starter.modifyRouteCtrl', [])
 
-  .controller('ModifyRouteCtrl', function($location) {
-    // Search route controller here
+.controller('ModifyRouteCtrl', function($location) {
+    // Modify route controller here
 
-  });
+});

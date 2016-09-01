@@ -20,7 +20,7 @@ angular.module('starter', ['ionic',
   'starter.state4Ctrl',
   'starter.state5Ctrl',
   'starter.searchRouteCtrl',
-  'starter.searchRouteCtrl'])
+  'starter.modifyRouteCtrl',])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -73,7 +73,7 @@ angular.module('starter', ['ionic',
     .state('modifyroute', {
       url: '/modifyroute',
       templateUrl: 'templates/ModifyRoute.html',
-      controller: 'ModifyRouteCtrl'
+      controller: 'ModifyRouteCtrl',
     })
   .state('map', {
     url: '/map',
