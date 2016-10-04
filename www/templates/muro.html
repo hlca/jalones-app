@@ -1,5 +1,21 @@
-<ion-view title="Muro" hide-back-button="false">
+<ion-view hide-back-button="true">
+
+	<ion-nav-title>
+      Muro
+    </ion-nav-title>
+
+	<ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-navicon" ui-sref="menu">
+      </button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+      <button class="button button-icon icon ion-person" ui-sref="profile">
+      </button>
+    </ion-nav-buttons>
+
     <ion-content padding="false" scroll="false" class="has-header" scroll="true">
+
     	<div class="list card">
 		  <div class="item item-avatar">
 		    <img src="img/max.png">
@@ -35,5 +51,21 @@
 		  </div>
 
 		</div>
+
+		<div class="tabs tabs-icon-top">
+		  <a class="tab-item" nav-transition="android" ui-sref="profile">
+		    <i class="icon ion-home"></i>
+		    Home
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-star"></i>
+		    Favorites
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-gear-a"></i>
+		    Settings
+		  </a>
+		</div>
+
 	</ion-content>
 </ion-view>

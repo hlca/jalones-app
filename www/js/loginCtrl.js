@@ -2,7 +2,7 @@ angular.module('starter.loginCtrl', [])
 
 .controller('LoginCtrl', function($location, $scope) {
   $scope.loginFunction = function(){
-    $location.path('/menu');
+    $location.path('/wall');
     // var promise = APIService.asyncAuthenticate(
     //   document.getElementById("email").value,
     //   document.getElementById("pass").value

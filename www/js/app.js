@@ -86,24 +86,24 @@ angular.module('starter', ['ionic',
     templateUrl: 'templates/map.html',
     controller: 'MapCtrl',
   })
-  .state('state1', {
-    url: '/state1',
-    templateUrl: 'templates/state1.html',
+  .state('muro', {
+    url: '/wall',
+    templateUrl: 'templates/muro.html',
     controller: 'State1Ctrl',
   })
-  .state('state2', {
-    url: '/state2',
-    templateUrl: 'templates/state2.html',
+  .state('postJalon', {
+    url: '/postJalon',
+    templateUrl: 'templates/postJalon.html',
     controller: 'State2Ctrl',
   })
-  .state('state3', {
-    url: '/state3',
-    templateUrl: 'templates/state3.html',
+  .state('askJalon', {
+    url: '/askJalon',
+    templateUrl: 'templates/askJalon.html',
     controller: 'State3Ctrl',
   })
-  .state('state4', {
-    url: '/state4',
-    templateUrl: 'templates/state4.html',
+  .state('profile', {
+    url: '/profile',
+    templateUrl: 'templates/profile.html',
     controller: 'State4Ctrl',
   })
   .state('state5', {
