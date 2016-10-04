@@ -1,5 +1,10 @@
-angular.module('starter.state1Ctrl', [])
+angular.module('starter.state1Ctrl', ['ionic'])
 
-.controller('State1Ctrl', function($scope) {
-  $scope.mCtrl = "Hello from controller state 1";
-});
+  .controller('State1Ctrl', function($ionicPopover, $scope) {
+
+    $ionicPopover.fromTemplateUrl('popoverID', {
+      scope: $scope,
+    }).then(function(popover) {
+      $scope.popover = popover;
+    });
+  });
