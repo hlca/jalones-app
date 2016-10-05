@@ -1,6 +1,6 @@
-angular.module('starter.state1Ctrl', ['ionic'])
+angular.module('starter.muroCtrl', ['ionic'])
 
-  .controller('State1Ctrl', function($ionicPopover, $scope,$location) {
+  .controller('MuroCtrl', function($ionicPopover, $scope,$location) {
 
     $ionicPopover.fromTemplateUrl('popoverID', {
       scope: $scope,

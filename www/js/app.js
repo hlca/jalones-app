@@ -14,10 +14,10 @@ angular.module('starter', ['ionic',
   'starter.MapCtrl',
   'starter.forgotpassCtrl',
   'starter.registerCtrl',
-  'starter.state1Ctrl',
-  'starter.state2Ctrl',
-  'starter.state3Ctrl',
-  'starter.state4Ctrl',
+  'starter.muroCtrl',
+  'starter.postJalonCtrl',
+  'starter.askJalonCtrl',
+  'starter.profileCtrl',
   'starter.state5Ctrl',
   'starter.modifyRouteCtrl',
   'starter.searchRouteCtrl',
@@ -92,22 +92,22 @@ angular.module('starter', ['ionic',
   .state('muro', {
     url: '/wall',
     templateUrl: 'templates/muro.html',
-    controller: 'State1Ctrl',
+    controller: 'MuroCtrl',
   })
   .state('postJalon', {
     url: '/postJalon',
     templateUrl: 'templates/postJalon.html',
-    controller: 'State2Ctrl',
+    controller: 'PostJalonCtrl',
   })
   .state('askJalon', {
     url: '/askJalon',
     templateUrl: 'templates/askJalon.html',
-    controller: 'State3Ctrl',
+    controller: 'AskJalonCtrl',
   })
   .state('profile', {
     url: '/profile',
     templateUrl: 'templates/profile.html',
-    controller: 'State4Ctrl',
+    controller: 'ProfileCtrl',
   })
   .state('state5', {
     url: '/state5',

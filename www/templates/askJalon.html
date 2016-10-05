@@ -1,5 +1,21 @@
 <ion-view title="Pedir jalon" hide-back-button="false">
-    <ion-content padding="false" scroll="false" class="has-header">
+  <ion-tabs class="tabs-icon-top">
+
+    <ion-tab title="Home" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" ui-sref="muro">
+      <!-- Tab 1 content -->
+
+    </ion-tab>
+
+    <ion-tab title="Publicar Jalon" icon-on="ion-ios-download" icon-off="ion-ios-download-outline" ui-sref="postJalon">
+      <!-- Tab 2 content -->
+    </ion-tab>
+
+    <ion-tab title="Pedir Jalon" icon-on="ion-ios-upload" icon-off="ion-ios-upload-outline" ui-sref="askJalon">
+      <!-- Tab 3 content -->
+    </ion-tab>
+
+  </ion-tabs>
+    <ion-content padding="false" scroll="false" class="has-header has-tabs">
     	<form class="list">
             <ion-list>
             <label class="item item-input">

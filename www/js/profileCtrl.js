@@ -1,6 +1,6 @@
-angular.module('starter.state4Ctrl', [])
+angular.module('starter.profileCtrl', [])
 
-.controller('State4Ctrl', function($scope, $location) {
+.controller('ProfileCtrl', function($scope, $location) {
   $scope.logoutFunction = function() {
     $location.path('/login');
   }

@@ -1,6 +1,6 @@
-angular.module('starter.state3Ctrl', [])
+angular.module('starter.askJalonCtrl', [])
 
-.controller('State3Ctrl', function($location, $scope) {
+.controller('AskJalonCrtl', function($location, $scope) {
   $scope.requestFunction = function() {
   	$location.path("/menu");
   	/* This function will publish the puller request. */

@@ -1,6 +1,6 @@
-angular.module('starter.state2Ctrl', [])
+angular.module('starter.postJalonCtrl', [])
 
-.controller('State2Ctrl', function($location, $scope) {
+.controller('PostJalonCtrl', function($location, $scope) {
   $scope.publishFunction = function() {
   	$location.path("/menu");
   	/* This function will publish the puller offer. */
