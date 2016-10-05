@@ -67,14 +67,51 @@
 		  </div>
 
 		</div>
+
+      <div class="list card">
+        <div class="item item-avatar">
+          <img src="img/perry.png">
+          <h2>End Point: Nueva Zelanda, costa</h2>
+          <br>
+          <h2>Start Point: Ukrania, Kiev</h2>
+          <p>Perry Juanin</p>
+        </div>
+
+        <div class="item item-body">
+
+          <p>
+            <a href="#" class="subdued">Puntuation: 1/5</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="list card">
+        <div class="item item-avatar">
+          <img src="img/perry.png">
+          <h2>End Point: Nueva Zelanda, costa</h2>
+          <br>
+          <h2>Start Point: Ukrania, Kiev</h2>
+          <p>Perry Juanin</p>
+        </div>
+
+        <div class="item item-body">
+
+          <p>
+            <a href="#" class="subdued">Puntuation: 1/5</a>
+          </p>
+        </div>
+
+      </div>
+
 	</ion-content>
 
 
   <script id="popoverID" type="text/ng-template">
     <ion-popover-view>
       <ion-content>
-        <a class="button icon-left button-positive ion-power botones" ng-click="logoutFunction()">Desconectar</a>
-        <a ui-sref="searchroute" class="button icon-left button-positive ion-search botones">Buscar Ruta</a>
+        <a class="button icon-left button-positive ion-power botones" ng-click="logoutFunction();popover.hide()">Desconectar</a>
+        <a ui-sref="searchroute" class="button icon-left button-positive ion-search botones" ng-click="popover.hide()">Buscar Ruta</a>
       </ion-content>
     </ion-popover-view>
   </script>
