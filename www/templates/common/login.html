@@ -3,20 +3,44 @@
         <form class="list">
             <div class="spacer" style="height: 40px;"></div>
             <ion-list>
-                <label class="item item-input">
-                    <span class="input-label">Correo Electrónico</span>
-                    <input id="email" type="email" placeholder="Ingresar correo electronico">
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>PULLUS</h1>
+							<p>A safe app thinked just for you!</p>
+						</header>
+						<footer>
+							 <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input id="email" type="email">
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Contraseña</span>
-                    <input id="pass" type="password" placeholder="Ingresar contraseña">
+                    <input id="pass" type="password">
                 </label>
-            </ion-list>
-            <div class="spacer" style="height: 40px;"></div>
-            <!-- button must have ng-click="loginFunction()"-->
-            <button class="button button-stable  button-block" type="submit" ng-click="loginFunction()">Iniciar Sesión</button>
+				<button class="button button-stable  button-block" type="submit" ng-click="loginFunction()">Iniciar Sesión</button>
 			<a class="button button-stable  button-block" ui-sref="forgotpass">Olvide mi Contraseña</a>
             <a ui-sref="register" id="login-button3" class="button button-positive  button-block button-clear">Regístrate</a>
+						</footer>
+					</section>
+
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+            </ion-list>
         </form>
     </ion-content>
 </ion-view>

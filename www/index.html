@@ -6,12 +6,11 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/main.css" rel="stylesheet">
+	<!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
-
+	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -37,8 +36,14 @@
     <script src="js/state5Ctrl.js"></script>
     <script src="js/services.js"></script>
     <script src="js/factories/JWTFactory.js"></script>
+	<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+	</script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="starter" class="is-loading">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
