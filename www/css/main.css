@@ -36,7 +36,7 @@
 	}
 
 	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
+		
 		content: none;
 	}
 
@@ -96,7 +96,7 @@
 	}
 
 		body:after {
-			content: '';
+			
 			display: block;
 			position: fixed;
 			top: 0;
@@ -391,7 +391,7 @@
 			input[type="radio"] + label:before {
 				border-radius: 4px;
 				border: solid 1px #c8cccf;
-				content: '';
+				
 				display: inline-block;
 				height: 1.65em;
 				left: 0;
@@ -448,7 +448,7 @@
 
 /* Icon */
 
-	.icon {
+/*	.icon {
 		text-decoration: none;
 		position: relative;
 		border-bottom: none;
@@ -465,7 +465,7 @@
 
 		.icon > .label {
 			display: none;
-		}
+		}*/
 
 /* List */
 
@@ -738,7 +738,7 @@
 			}
 
 			#main .avatar:before {
-				content: '';
+				
 				display: block;
 				position: absolute;
 				top: 50%;
@@ -839,7 +839,7 @@
 		}
 
 		#wrapper:before {
-			content: '';
+			
 			display: block;
 		}
 
