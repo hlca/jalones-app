@@ -1,41 +1,44 @@
 angular.module('starter.MapCtrl', [])
 
     .controller('MapCtrl', function($scope) {
-      function initialize() {
-        console.log( 'step 1');
-        var myLatlng = new google.maps.LatLng(14.6047215,-90.4916558);
-        
-        var mapOptions = {
-          center: myLatlng,
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map"),
-            mapOptions);
-      
-        console.log( 'step 2');
+		function initMap() {
+		  map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 7,
+			center: {lat: 14.6054765, lng: -90.4882603}  // Center the map on Chicago, USA.
+		  });
 
-        $scope.map = map;
-      }
-      //google.maps.event.addDomListener(window, 'load', initialize);
-      
-      // $scope.centerOnMe = function() {
-      //   //console.log($scope.map);
-      //   if(!$scope.map) {
-      //     return;
-      //   }
+		  poly = new google.maps.Polyline({
+			strokeColor: '#000000',
+			strokeOpacity: 1.0,
+			strokeWeight: 3
+		  });
+		  poly.setMap(map);
 
+		  // Add a listener for the click event
+		  map.addListener('click', addLatLng);
+		}
+		function addLatLng(event) {
+			  var path = poly.getPath();
 
-      //   navigator.geolocation.getCurrentPosition(function(pos) {
-      //     $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-      //   }, function(error) {
-      //     alert('Unable to get location: ' + error.message);
-      //   });
+			  // Because path is an MVCArray, we can simply append a new coordinate
+			  // and it will automatically appear.
+			  path.push(event.latLng);
+			myPath = path.b.map(
+				function(item){
+					return {'latitud':item.lat(), 'longitud': item.lng()};
+				}
+			);
 
-      // };
-
+			console.log(JSON.stringify(myPath));
+			  // Add a new marker at the new plotted point on the polyline.
+			  var marker = new google.maps.Marker({
+				position: event.latLng,
+				title: '#' + path.getLength(),
+				map: map
+			  });
+			}
       $scope.$on('$ionicView.enter', function(e) {
-        initialize();
+        initMap();
       });
       
     });
