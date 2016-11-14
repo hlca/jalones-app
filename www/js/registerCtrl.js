@@ -1,7 +1,7 @@
 angular.module('starter.RegisterCtrl', [])
 
 .controller('RegisterCtrl', function($location, $scope, JWTFactory) {
-  $scope.RegisterCtrl = function(){
+  $scope.registerFunction = function(){
     var first_name = document.getElementById("first_name").value;
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
