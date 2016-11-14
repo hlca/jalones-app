@@ -13,7 +13,7 @@ angular.module('starter', ['ionic',
   'starter.menuCtrl',
   'starter.MapCtrl',
   'starter.forgotpassCtrl',
-  'starter.registerCtrl',
+  'starter.RegisterCtrl',
   'starter.muroCtrl',
   'starter.postJalonCtrl',
   'starter.askJalonCtrl',
@@ -57,7 +57,7 @@ angular.module('starter', ['ionic',
   .state('register', {
     url: '/register',
     templateUrl: 'templates/common/register.html',
-    controller: 'RegisterCtrl',
+    controller: 'registerCtrl',
   })
   .state('menu', {
     url: '/menu',

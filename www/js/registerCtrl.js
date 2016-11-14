@@ -10,17 +10,17 @@ angular.module('starter.RegisterCtrl', [])
     var address = document.getElementById("address").value;
     var phone = document.getElementById("phone").value;
     JWTFactory.post(
-      'api/user/', 
+      'api/user/',
       {
-        'name': first_name, 
-        'username': first_name, 
-        'email': email, 
-        'password': password, 
-        'confirmPassword': password2, 
-        'address': address
+        'name': first_name,
+        'username': first_name,
+        'email': email,
+        'password': password,
+        'confirmPassword': password2,
+        'address': address,
         'phone': phone
-      }, 
-      true, 
+      },
+      true,
       JWTFactory.serverToken.access_token
     ).then(function(data){
       console.log(data);
