@@ -1,18 +1,27 @@
 angular.module('starter.loginCtrl', [])
 
-.controller('LoginCtrl', function($location, $scope) {
+.controller('LoginCtrl', function($location, $scope, JWTFactory) {
   $scope.loginFunction = function(){
-    $location.path('/wall');
-    // var promise = APIService.asyncAuthenticate(
-    //   document.getElementById("email").value,
-    //   document.getElementById("pass").value
-    // );
-    // promise.then(function(result){
-      
-    // }, function(error){
-    //   alert("ERROR al realizar autenticacion. Intente mas tarde")
-    //   console.log(JSON.stringify(error));
-    // });
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("pass").value;
+    JWTFactory.post(
+      'api/user/authenticate', 
+      {
+        'username': email, 
+        'password': password
+      }, 
+      true, 
+      JWTFactory.serverToken.access_token
+    ).then(function(data){
+      console.log(data);
+      if(data.success) {
+        $location.path('/wall');
+      }
+      else {
+        alert("Credenciales incorrectas");
+      }
+    }, function(data){
+      alert("Hubo un error en la solicitud");
+    })
   }
-
 });
